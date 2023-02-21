@@ -21,5 +21,5 @@ jobs:
       run: |
         for changed_file in ${{ steps.files.outputs.all }}; do
           echo "#####  Optimizing file: ${changed_file}  #####:"
-          python eversql_github_sql_file_optimizer.py ${changed_file} API_KEY https://www.eversql.com/api/optimize
+          python eversql_github_sql_file_optimizer.py ${changed_file} 502009536f2928102e5eab40767d9c3d73f27125ca8efedeee8ed0ad176a3fd0573e0cd925fad3b609a8fa16350957255a3acdebde6eb92ad1989b2aaadd8cc719c7b084a65dda0e33751e579c05fe01056a828280df156b992f95c827fa856a8d763055aa71df0028f8e30225fa08399e1f995ba0f1247c9 https://www.eversql.com/api/optimize
         done
